@@ -1,0 +1,166 @@
+.home-component{
+    width: 100%;
+    height: auto;
+    background-color: #25292e;
+}
+.job{
+    color: #FDC435;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+.about-me{
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120%;
+    color: whitesmoke;
+}
+.details-about-me{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 125%;
+    color: #9B9D9E;
+    margin-top: 32px;
+}
+.information-container{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.home-component{
+    padding-top: 100px;
+}
+.buttons-container{
+    width: 244px;
+    height: 43px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.cv-btn{
+    width: 120px;
+    height: 43px;
+    background-color: #FDC435;
+    color: #25292e;
+    border: 0;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    cursor: pointer;
+}
+.cv-btn:hover{
+    border: 2px solid #25282B;
+    font-size: 13.5px;
+    background-color: white;
+    transition: 0.8s;
+}
+.linkedIn-btn{
+    width:117px ;
+    height: 43px;
+    background-color: white;
+    color: #25282B;
+    font-style: normal;
+    font-weight: 500;
+    font-size:14px;
+    line-height: 150%;
+    border: 0;
+    border: 2px solid #25282B;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+.linkedIn-btn:hover{
+    background-color:#FDC435 ;
+    border: 0;
+    transition: 0.8s;
+    font-size: 13.5px;
+}
+.react-title{
+    margin-top: 150px;
+}
+.react{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    color: whitesmoke;
+    text-align: center;
+    cursor: default;
+}
+.yellow-underline{
+    width: 100px;
+    height: 4px;
+    background-color: #FDC435;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .information-container{
+        padding: 10px;
+    }
+    .about-me{
+        font-size: 55px;
+    }
+    .details-about-me{
+        font-size: 20px;
+    }
+    .job{
+        font-size: 18px;
+    }
+}
+@media (max-width: 700px){
+    .about-me{
+        text-align: center;
+        font-size: 45px;
+    }
+    .details-about-me{
+        text-align: center;
+        font-size: 18px;
+    }
+    .job{
+        text-align: center;
+    } 
+    .buttons-container{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 590px){
+    .about-me{
+        font-size: 40px;
+    }
+    .javascript{
+        font-size: 40px;
+    }
+    .details-about-me{
+        font-size: 17px;
+    }
+    .job{
+        font-size: 17px;
+    }
+}
+@media (max-width: 457px){
+    .about-me{
+        font-size: 30px;
+    }  
+    .javascript{
+        font-size: 30px;
+    }
+    .details-about-me{
+        font-size: 16px;
+    }
+    .job{
+        font-size: 16px;
+    }
+}
