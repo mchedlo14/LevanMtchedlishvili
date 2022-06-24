@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import { PropagateLoader } from 'react-spinners';
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
               <Route path='/' exact element={<Home />}/>
               <Route path='/about' element={<About />}/>
             </Routes>
+            <Footer />
           </>
         }
 
