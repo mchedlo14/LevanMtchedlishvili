@@ -4,7 +4,7 @@ import NavbarComp from './components/NavbarComp'
 import About from './components/About'
 import './App.css'
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -23,7 +23,7 @@ const App = () => {
   },[])
 
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         {
           loading === true ?
@@ -40,7 +40,7 @@ const App = () => {
         }
 
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 
