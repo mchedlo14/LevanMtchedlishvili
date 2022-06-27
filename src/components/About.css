@@ -27,8 +27,8 @@
 }
 .about-text{
     color: #828282;
-    width: 50%;
-    text-align: center;
+    width: 60%;
+    text-align:center;
     font-size: 18px;
 }
 .about-skills{
@@ -78,4 +78,63 @@ span{
 .non-formal-education p{
     color: #828282;
     padding-top: 10px;
+}
+@media(max-width:1200px){
+    .about-text{
+        width: 80%;
+    }
+}
+@media(max-width:900px){
+    .about-text{
+        width: 100%;
+    }
+}
+@media(max-width:800px){
+    .startup-text{
+        width: 80%;
+    }
+}
+
+@media(max-width:650px){
+    .skills{
+        font-size: 14px;
+    }
+    .about-text{
+        font-size: 14px;
+    }
+    .about-job{
+        font-size: 24px;
+    }
+    .my-image{
+        width: 200px;
+        height: 200px;
+    }
+    .about-skills{
+        font-size: 24px;
+    }
+    .work-experience-container h2{
+        font-size: 24px;
+    }
+    .work-experience-container p{
+        font-size: 14px;
+    }
+    .non-formal-education h2{
+        font-size: 24px;
+    }
+    .non-formal-education p{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media(max-width:448px){
+    .startup-text{
+        width: 100%;
+        padding: 15px;
+    }
+    .non-formal-education{
+        margin-top: 0;
+    }
+    .about-job{
+        font-size: 20px;
+    }
 }
