@@ -1,0 +1,81 @@
+.about-container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.my-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #FDC435;
+}
+.about-job{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #FDC435;
+    font-weight: 650;
+}
+.main-about-container{
+    background-color: #25292e;
+    width: 100%;
+    height: auto;
+}
+.about-text{
+    color: #828282;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+}
+.about-skills{
+    color: #FDC435;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.skills{
+    color: #828282;
+    margin-top: 10px;
+    text-align: center;
+}
+span{
+    color: #FDC435;
+}
+.work-experience-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #25292e;
+    margin-top: 50px;
+}
+.work-experience-container h2{
+    color: #FDC435;
+    font-weight: 600;
+}
+.startup-text{
+    color: #828282;
+    width: 800px;
+    text-align: center;
+    padding-top: 10px;
+}
+.non-formal-education{
+    background-color: #25292e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.non-formal-education h2{
+    color: #FDC435;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.non-formal-education p{
+    color: #828282;
+    padding-top: 10px;
+}
