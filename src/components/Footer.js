@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className='social-media-container'>
-            <a href='https://github.com/mchedlo14?tab=repositories' target='_blank'>
+            <a href='https://github.com/mchedlo14?tab=repositories' target='_blank' rel="noreferrer">
                 <i className="fab fa-github"></i>
             </a>
-            <a href='https://www.linkedin.com/in/levan-mtchedlishvili-32a331222/' target='_blank'>
+            <a href='https://www.linkedin.com/in/levan-mtchedlishvili-32a331222/' target='_blank' rel="noreferrer">
                 <i className="fab fa-linkedin-in"></i>
             </a>
             <i className="fab fa-instagram"></i>

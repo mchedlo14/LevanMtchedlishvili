@@ -21,7 +21,7 @@ const Home = () => {
                 <a href={require("../cv/levan_mtchedlishvili.pdf")} download="Levan Mtchedlishvili CV">
                     <button className='cv-btn'>Download CV</button>
                 </a>
-                <a href='https://www.linkedin.com/in/levan-mtchedlishvili-32a331222/' target='_blank'>
+                <a href='https://www.linkedin.com/in/levan-mtchedlishvili-32a331222/' target='_blank' rel="noreferrer">
                     <button className='linkedIn-btn'>Linkedin</button>
                 </a>
             </div>
