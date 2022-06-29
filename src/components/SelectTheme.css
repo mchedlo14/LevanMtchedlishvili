@@ -1,0 +1,28 @@
+.select-theme-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0;
+}
+
+.fa-moon{
+    color: rgba(255,255,255,.55);
+    font-size: 20px;
+}
+.fa-moon:hover{
+    color:  rgba(78, 77, 77, 0.55);
+}
+.fa-sun{
+    color: rgba(255,255,255,.55);
+    font-size: 20px;
+}
+.fa-sun:hover{
+    color: #FDC435;
+}
+.select-theme-buttons-container{
+    display: flex;
+}

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import ThemeContext from '../context/ThemeContext';
 import './About.css'
 
+
 const About = () => {
+  const theme = useContext(ThemeContext);
   return (
-    <div className='main-about-container'>
+    <div className={`main-about-container-${theme.theme}`}>
       <div className='about-container'>
         <div className='image-container' data-aos="zoom-in">
           <img src='/images/lm.jpg' className='my-image'/>
@@ -18,17 +21,17 @@ const About = () => {
         </div>
       </div>
 
-      <div className='work-experience-container' data-aos="zoom-in">
-        <h2>Work Experience</h2>
-        <p className='startup-text'>A startup that helps you find a pet caregiver and also
+      <div className={`work-experience-container-${theme.theme}`} data-aos="zoom-in">
+        <h2 className='work-experience-title'>Work Experience</h2>
+        <p className={`startup-text-${theme.theme}`}>A startup that helps you find a pet caregiver and also
             a job opportunity to babysit pets. programs used:
             HTML, CSS, JS</p>
       </div>
 
 
-      <div className='non-formal-education' data-aos="zoom-in">
-        <h2>Non Formal Education</h2>
-        <p>W3schools, FreeCodeCamp, Frontend Mentor, Udemy, Edabit, Codewars</p>
+      <div className={`non-formal-education-${theme.theme}`} data-aos="zoom-in">
+        <h2 className='education-title'>Non Formal Education</h2>
+        <p className='education-pltaforms'>W3schools, FreeCodeCamp, Frontend Mentor, Udemy, Edabit, Codewars</p>
       </div>
     </div>
   )

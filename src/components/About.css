@@ -20,8 +20,13 @@
     color: #FDC435;
     font-weight: 650;
 }
-.main-about-container{
+.main-about-container-dark{
     background-color: #25292e;
+    width: 100%;
+    height: auto;
+}
+.main-about-container-light{
+    background-color: whitesmoke;
     width: 100%;
     height: auto;
 }
@@ -44,7 +49,7 @@
 span{
     color: #FDC435;
 }
-.work-experience-container{
+.work-experience-container-dark{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,17 +57,31 @@ span{
     background-color: #25292e;
     margin-top: 50px;
 }
-.work-experience-container h2{
+.work-experience-container-light{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+.work-experience-title{
     color: #FDC435;
     font-weight: 600;
 }
-.startup-text{
+.startup-text-dark{
     color: #828282;
     width: 800px;
     text-align: center;
     padding-top: 10px;
 }
-.non-formal-education{
+.startup-text-light{
+    color: #828282;
+    width: 800px;
+    text-align: center;
+    padding-top: 10px;
+}
+.non-formal-education-dark{
     background-color: #25292e;
     display: flex;
     flex-direction: column;
@@ -70,17 +89,28 @@ span{
     align-items: center;
     margin-top: 50px;
 }
-.non-formal-education h2{
+.non-formal-education-light{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.education-title{
     color: #FDC435;
     font-weight: 600;
     margin-top: 20px;
 }
-.non-formal-education p{
+.education-pltaforms{
     color: #828282;
     padding-top: 10px;
 }
 @media(max-width:1200px){
-    .about-text{
+    .about-text-dark{
+        width: 80%;
+    }
+    .about-text-light{
         width: 80%;
     }
 }
@@ -90,7 +120,10 @@ span{
     }
 }
 @media(max-width:800px){
-    .startup-text{
+    .startup-text-dark{
+        width: 80%;
+    }
+    .startup-text-light{
         width: 80%;
     }
 }
@@ -99,7 +132,10 @@ span{
     .skills{
         font-size: 14px;
     }
-    .about-text{
+    .about-text-dark{
+        font-size: 14px;
+    }
+    .about-text-light{
         font-size: 14px;
     }
     .about-job{
@@ -112,22 +148,27 @@ span{
     .about-skills{
         font-size: 24px;
     }
-    .work-experience-container h2{
+    .about-skills,.work-experience-title,.education-title{
         font-size: 24px;
     }
-    .work-experience-container p{
+    .startup-text-dark{
         font-size: 14px;
     }
-    .non-formal-education h2{
-        font-size: 24px;
+    .startup-text-light{
+        font-size: 14px;
     }
-    .non-formal-education p{
+    .education-pltaforms{
         font-size: 14px;
         text-align: center;
+        padding: 10px;
     }
 }
 @media(max-width:448px){
-    .startup-text{
+    .startup-text-dark{
+        width: 100%;
+        padding: 15px;
+    }
+    .startup-text-light{
         width: 100%;
         padding: 15px;
     }

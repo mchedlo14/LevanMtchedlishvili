@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     background-color: #25292e;
+    padding-top: 100px;
 }
 .job{
     color: #FDC435;
@@ -10,7 +11,15 @@
     font-size: 18px;
     line-height: 27px;
 }
-.about-me{
+.about-me-light{
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120%;
+    color: #4d545c;
+}
+.about-me-dark{
     margin-top: 12px;
     font-style: normal;
     font-weight: bold;
@@ -31,9 +40,7 @@
     width: 100%;
     margin: 0 auto;
 }
-.home-component{
-    padding-top: 100px;
-}
+
 .buttons-container{
     width: 244px;
     height: 43px;
@@ -83,12 +90,21 @@
 .react-title{
     margin-top: 150px;
 }
-.react{
+.react-dark{
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 72px;
     color: whitesmoke;
+    text-align: center;
+    cursor: default;
+}
+.react-light{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    color: #4d545c;
     text-align: center;
     cursor: default;
 }
@@ -101,6 +117,14 @@
     margin-top: 4px;
 }
 
+.home-component-light{
+    background-color: whitesmoke;
+    padding-top: 100px;
+}
+.home-component-dark{
+    background-color: #25292E;
+    padding-top: 100px;
+}
 
 
 
@@ -109,7 +133,10 @@
     .information-container{
         padding: 10px;
     }
-    .about-me{
+    .about-me-dark{
+        font-size: 55px;
+    }
+    .about-me-light{
         font-size: 55px;
     }
     .details-about-me{
@@ -120,7 +147,11 @@
     }
 }
 @media (max-width: 700px){
-    .about-me{
+    .about-me-dark{
+        text-align: center;
+        font-size: 45px;
+    }
+    .about-me-light{
         text-align: center;
         font-size: 45px;
     }
@@ -137,7 +168,10 @@
     }
 }
 @media (max-width: 590px){
-    .about-me{
+    .about-me-light{
+        font-size: 40px;
+    }
+    .about-me-dark{
         font-size: 40px;
     }
     .javascript{
@@ -151,9 +185,12 @@
     }
 }
 @media (max-width: 457px){
-    .about-me{
+    .about-me-light{
         font-size: 30px;
     }  
+    .about-me-dark{
+        font-size: 30px;
+    } 
     .javascript{
         font-size: 30px;
     }
@@ -162,5 +199,13 @@
     }
     .job{
         font-size: 16px;
+    }
+}
+@media(max-width: 435px){
+    .react-dark{
+        font-size: 30px;
+    }
+    .yellow-underline{
+        margin-top: -10px;
     }
 }

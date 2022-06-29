@@ -1,4 +1,4 @@
-.fa-github{
+.fa-github.dark{
     font-size: 35px;
     color: white;
     cursor: pointer;
@@ -6,24 +6,49 @@
 .fa-github:hover{
     color: black;
 }
-.fa-linkedin-in{
+.fa-github.light{
+    font-size: 35px;
+    color: #25282B;
+    cursor: pointer;
+}
+.fa-github.light:hover{
+    color: black;
+}
+.fa-linkedin-in.dark{
     font-size: 35px;
     color: white;
+    cursor: pointer;
+}
+.fa-linkedin-in.light{
+    font-size: 35px;
+    color: #25282B;
     cursor: pointer;
 }
 .fa-linkedin-in:hover{
     color: #0072b1;
 }
-.fa-instagram{
+.fa-instagram.dark{
     font-size: 35px;
     color: white;
+    cursor: pointer;
+}
+.fa-instagram.light{
+    font-size: 35px;
+    color: #25282B;
     cursor: pointer;
 }
 .fa-instagram:hover{
     color: #e95950;
 }
-.footer{
+.footer-dark{
     background-color: #25292e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-light{
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,11 +60,17 @@
     display: flex;
     justify-content: space-between;
 }
-.copyright-footer{
+.copyright-footer-dark{
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
     color: #FDC435;
+}
+.copyright-footer-light{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #4d545c;
 }
 .image{
     width: 100%;

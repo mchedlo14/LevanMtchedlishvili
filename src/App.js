@@ -10,10 +10,13 @@ import {
 } from "react-router-dom";
 import { PropagateLoader } from 'react-spinners';
 import Footer from './components/Footer'
+import ThemeContext from './context/ThemeContext'
+
 
 
 const App = () => {
   const [loading,setLoading] = useState(false)
+  const [theme,setTheme] = useState('dark')
 
   useEffect(()=>{
     setLoading(true)
@@ -30,12 +33,14 @@ const App = () => {
          <div className='loader'><PropagateLoader size={20} color={"#25292E"} loading={loading}/></div>
           :
           <>
-            <NavbarComp />
-            <Routes>
-              <Route path='/' exact element={<Home />}/>
-              <Route path='/about' element={<About />}/>
-            </Routes>
-            <Footer />
+            <ThemeContext.Provider value={{theme,setTheme}}>
+              <NavbarComp />
+              <Routes>
+                <Route path='/' exact element={<Home />}/>
+                <Route path='/about' element={<About />}/>
+              </Routes>
+              <Footer />
+            </ThemeContext.Provider>
           </>
         }
 

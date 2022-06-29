@@ -33,7 +33,18 @@
     transition: 0.8s;
     font-size: 17px;
 }
-.project-container p{
+.project-description-light{
+    width: 100%;
+    color: #828282;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #4d545c;
+    padding: 0px 15px 15px 0px;
+}
+.project-description-dark{
     width: 100%;
     color: #828282;
     font-style: normal;
@@ -44,7 +55,7 @@
     color: whitesmoke;
     padding: 0px 15px 15px 0px;
 }
-.project-container h2{
+.project-title-dark{
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -52,4 +63,13 @@
     margin-top: 100px;
     text-align: center;
     color: whitesmoke;
+}
+.project-title-light{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+    margin-top: 100px;
+    text-align: center;
+    color: #4d545c;
 }
