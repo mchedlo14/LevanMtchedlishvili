@@ -22,9 +22,6 @@ const NavbarComp = () => {
             <Link to='/about' style={{ textDecoration: 'none' }}>
               <Nav.Link href="#pricing">About</Nav.Link>
             </Link>
-            <Link to='/contact' style={{ textDecoration: 'none' }}>
-              <Nav.Link href="#deets">Contact</Nav.Link>
-            </Link>
           </Nav>
           <SelectTheme />
         </Navbar.Collapse>
