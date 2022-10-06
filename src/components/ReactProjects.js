@@ -40,7 +40,7 @@ const ReactProjects = () => {
         <div data-aos="fade-right" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Weather App</h2>
             <p className={`project-description-${theme.theme}`}>In this project, you can search the country and see the weather temperature.</p>
-            <a href='https://sunnyweatherapp.netlify.app' target="_blank" rel="noreferrer">
+            <a href='https://weatherappdb.netlify.app/' target="_blank" rel="noreferrer">
                 <button className='project-button'>View Project</button>
             </a>
         </div>
