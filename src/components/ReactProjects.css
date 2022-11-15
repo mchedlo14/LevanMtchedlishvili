@@ -9,6 +9,7 @@
 }
 .project-container{
     max-width: 440px;
+    width: 440px;
     height: auto;
     padding: 15px;
 }
