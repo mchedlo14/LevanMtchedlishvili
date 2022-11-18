@@ -11,6 +11,7 @@ import {
 import { PropagateLoader } from 'react-spinners';
 import Footer from './components/Footer'
 import ThemeContext from './context/ThemeContext'
+import Timeline from './components/Timeline'
 
 
 
@@ -38,6 +39,7 @@ const App = () => {
               <Routes>
                 <Route path='/' exact element={<Home />}/>
                 <Route path='/about' element={<About />}/>
+                <Route path='/timeline' element={<Timeline />}/>
               </Routes>
               <Footer />
             </ThemeContext.Provider>

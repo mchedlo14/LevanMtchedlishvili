@@ -20,7 +20,10 @@ const NavbarComp = () => {
               <Nav.Link href="/home">Home</Nav.Link>
             </Link>
             <Link to='/about' style={{ textDecoration: 'none' }}>
-              <Nav.Link href="#pricing">About</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+            </Link>
+            <Link to='/timeline' style={{ textDecoration: 'none' }}>
+              <Nav.Link href="/timeline">Timeline</Nav.Link>
             </Link>
           </Nav>
           <SelectTheme />
