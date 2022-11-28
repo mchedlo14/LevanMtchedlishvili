@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-wrapper{
+    width: 100%;
+    height: 60px;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.navbar-container p{
+    color: whitesmoke;
+    font-size: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.burger-icon{
+    cursor: pointer;
+}
