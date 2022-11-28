@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import ThemeContext from '../context/ThemeContext';
-import './ReactProjects.css'
+import '../assets/ReactProjects.css'
 
 
 
@@ -48,6 +48,20 @@ const ReactProjects = () => {
             <h2 className={`project-title-${theme.theme}`}>Movie App</h2>
             <p className={`project-description-${theme.theme}`}>I used API in this project. You can see the list of movies, also You can search for movies.</p>
             <a href='https://movieappimdb.netlify.app' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
+        <div data-aos="fade-right" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Pc Shop</h2>
+            <p className={`project-description-${theme.theme}`}>I used API in this project. In this project You can add your computer or laptop to this project and finally see the created list.</p>
+            <a href='https://funny-bubblegum-25ca41.netlify.app' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
+        <div data-aos="fade-left" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Chess Knight</h2>
+            <p className={`project-description-${theme.theme}`}>In this project you can registration to the chess competition.</p>
+            <a href='https://redberrychess.netlify.app' target="_blank" rel="noreferrer">
                 <button className='project-button'>View Project</button>
             </a>
         </div>

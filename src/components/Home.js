@@ -1,5 +1,5 @@
 import React,{useContext, useEffect} from 'react'
-import './Home.css'
+import '../assets/Home.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactProjects from './ReactProjects';
