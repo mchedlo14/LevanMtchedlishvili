@@ -1,9 +1,13 @@
 import React from 'react'
+import { useContext } from 'react';
 import '../assets/Timeline.css'
+import ThemeContext from '../context/ThemeContext';
 const Timeline = () => {
+	const theme = useContext(ThemeContext);
+
   return (
     <>
-    <section class="timeline-section">
+    <section class={`timeline-section-${theme.theme}`}>
 	<div class="timeline-items">
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>

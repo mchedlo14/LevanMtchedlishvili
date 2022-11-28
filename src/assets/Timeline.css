@@ -7,8 +7,13 @@
 body{
 	font-family: 'Poppins', sans-serif;
 }
-.timeline-section{
+.timeline-section-dark{
 	background-color: #24292d;
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-section-light{
+	background-color: whitesmoke;
 	min-height: 100vh;
 	padding: 100px 15px;
 }
