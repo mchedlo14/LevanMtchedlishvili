@@ -5,7 +5,7 @@ import '../assets/ReactProjects.css'
 
 
 const ReactProjects = () => {
-    const theme = useContext(   ThemeContext);
+    const theme = useContext(ThemeContext);
 
   return (
     <div className='react-projects'>
