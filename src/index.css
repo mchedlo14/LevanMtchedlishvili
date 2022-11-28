@@ -11,3 +11,26 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
+/* ::-webkit-scrollbar{
+  width: 10px;
+  background-color: #25292E;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #25292E; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(77, 77, 77); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
