@@ -65,6 +65,13 @@ const ReactProjects = () => {
                 <button className='project-button'>View Project</button>
             </a>
         </div>
+        <div data-aos="fade-right" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Fifa World Cup</h2>
+            <p className={`project-description-${theme.theme}`}>In this project you can see today's matches and live matches.</p>
+            <a href='https://github.com/mchedlo14/Fifa-World-Cup-Qatar' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
     </div>
   )
 }

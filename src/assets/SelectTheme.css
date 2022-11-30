@@ -25,4 +25,6 @@
 }
 .select-theme-buttons-container{
     display: flex;
+    padding-left: 30px;
+    gap: 20px;
 }

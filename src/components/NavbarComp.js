@@ -50,7 +50,7 @@ const NavbarComp = () => {
         <Link to='/timeline'>
           <Item itemKey={'user'} text={'Timeline'}></Item>
         </Link>
-        {/* <SelectTheme /> */}
+        <SelectTheme />
       </Menu>
     </div>
     
