@@ -30,3 +30,9 @@
 .burger-icon{
     cursor: pointer;
 }
+.menu-wrap.burger-menu{
+    background-color: #212529;
+}
+.menu-wrap.burger-menu div{
+    background-color: #212529   ;
+}
