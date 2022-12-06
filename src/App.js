@@ -18,6 +18,10 @@ import Timeline from './components/Timeline'
 const App = () => {
   const [loading,setLoading] = useState(false)
   const [theme,setTheme] = useState('dark')
+  
+  useEffect(() => {
+    document.title = 'Levan Mtchedlishvili'
+},[])
 
   useEffect(()=>{
     setLoading(true)

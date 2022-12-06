@@ -36,3 +36,17 @@
 .menu-wrap.burger-menu div{
     background-color: #212529   ;
 }
+.item-text{
+    color: whitesmoke;
+}
+.item-text:hover{
+    color: #FDC435;
+    transition: 0.4s;
+}
+svg{
+    fill: whitesmoke;
+}
+svg:hover{
+    fill: #FDC435;
+    transition: 0.4s;
+}
