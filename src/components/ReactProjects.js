@@ -72,6 +72,13 @@ const ReactProjects = () => {
                 <button className='project-button'>View Project</button>
             </a>
         </div>
+        <div data-aos="fade-left" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Recourse</h2>
+            <p className={`project-description-${theme.theme}`}>Recourse Project. This is a Mg's project.</p>
+            <a href='http://recourse.ge/' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
     </div>
   )
 }
