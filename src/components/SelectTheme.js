@@ -7,10 +7,12 @@ const SelectTheme = () => {
 
     const lightTheme = () => {
       theme.setTheme('light')
+      localStorage.setItem('themeColor','light')
     }
 
     const darkTheme = () => {
       theme.setTheme('dark')
+      localStorage.setItem('themeColor','dark')
     }
   return (
     <div className='select-theme-buttons-container'>
