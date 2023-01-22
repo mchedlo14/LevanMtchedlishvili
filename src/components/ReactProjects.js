@@ -67,34 +67,41 @@ const ReactProjects = () => {
             </a>
         </div>
         <div data-aos="fade-right" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Pass Generator</h2>
+            <p className={`project-description-${theme.theme}`}>In this project you can Generate Random password.</p>
+            <a href='https://upggen.netlify.app' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
+        <div data-aos="fade-left" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Advice App</h2>
             <p className={`project-description-${theme.theme}`}>do you have a problem? Advice generator will help you.Maybe find a solution.</p>
             <a href='https://uncleroland.netlify.app/' target="_blank" rel="noreferrer">
                 <button className='project-button'>View Project</button>
             </a>
         </div>
-        <div data-aos="fade-left" className='project-container'>
+        <div data-aos="fade-right" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Github Users</h2>
             <p className={`project-description-${theme.theme}`}>In this project you can find github users.</p>
             <a href='https://gusers.netlify.app/' target="_blank" rel="noreferrer">
                 <button className='project-button'>View Project</button>
             </a>
         </div>
-        <div data-aos="fade-right" className='project-container'>
+        <div data-aos="fade-left" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Weather App</h2>
             <p className={`project-description-${theme.theme}`}>In this project, you can search the country and see the weather temperature.</p>
             <a href='https://weatherappdb.netlify.app/' target="_blank" rel="noreferrer">
                 <button className='project-button'>View Project</button>
             </a>
         </div>
-        <div data-aos="fade-left" className='project-container'>
+        <div data-aos="fade-right" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Movie App</h2>
             <p className={`project-description-${theme.theme}`}>I used API in this project. You can see the list of movies, also You can search for movies.</p>
             <a href='https://movieappimdb.netlify.app' target="_blank" rel="noreferrer">
                 <button className='project-button'>View Project</button>
             </a>
         </div>
-        <div data-aos="fade-right" className='project-container'>
+        <div data-aos="fade-left" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Fifa World Cup</h2>
             <p className={`project-description-${theme.theme}`}>In this project you can see today's matches and live matches.</p>
             <a href='https://github.com/mchedlo14/Fifa-World-Cup-Qatar' target="_blank" rel="noreferrer">
