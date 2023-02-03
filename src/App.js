@@ -17,7 +17,12 @@ import Timeline from './components/Timeline'
 
 const App = () => {
   const [loading,setLoading] = useState(false)
-  const [theme,setTheme] = useState('dark')
+  const [theme,setTheme] = useState(localStorage.getItem('themeColor') === '' ? 'dark':localStorage.getItem('themeColor'))
+  
+  useEffect(() => {
+    document.title = 'Levan Mtchedlishvili'
+    localStorage.getItem('themeColor')
+},[])
 
   useEffect(()=>{
     setLoading(true)

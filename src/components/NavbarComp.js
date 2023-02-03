@@ -10,6 +10,21 @@ import 'burger-menu/lib/index.css';
 
 const NavbarComp = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar,setNavbar] = useState(false)
+
+
+  const changeBackground = () => {
+
+    if(window.scrollY >= 80){
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+
+  }
+
+  window.addEventListener('scroll',changeBackground)
+
   return (
     <div className='navbar-wrapper'>
       {/* {" "}

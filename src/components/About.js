@@ -1,10 +1,12 @@
-import React, {useContext} from 'react'
+import React, {useContext,useEffect} from 'react'
 import ThemeContext from '../context/ThemeContext';
 import '../assets/About.css'
 
 
 const About = () => {
   const theme = useContext(ThemeContext);
+
+
   return (
     <div className={`main-about-container-${theme.theme}`}>
       <div className='about-container'>

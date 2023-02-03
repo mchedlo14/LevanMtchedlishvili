@@ -4,10 +4,20 @@ import '../assets/SelectTheme.css';
 
 const SelectTheme = () => {
     const theme = useContext(ThemeContext);
+
+    const lightTheme = () => {
+      theme.setTheme('light')
+      localStorage.setItem('themeColor','light')
+    }
+
+    const darkTheme = () => {
+      theme.setTheme('dark')
+      localStorage.setItem('themeColor','dark')
+    }
   return (
     <div className='select-theme-buttons-container'>
-      <button className='select-theme-button' onClick={() => theme.setTheme('light')}><i className="fas fa-sun"></i></button>
-      <button className='select-theme-button' onClick={() => theme.setTheme('dark')}><i className="fas fa-moon"></i></button>
+      <button className='select-theme-button' onClick={lightTheme}><i className="fas fa-sun"></i></button>
+      <button className='select-theme-button' onClick={darkTheme}><i className="fas fa-moon"></i></button>
     </div>
   )
 }

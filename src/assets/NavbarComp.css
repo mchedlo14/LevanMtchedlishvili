@@ -9,13 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 999;
 }
+
 .navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
     margin: 0 auto;
+    z-index: 1;
 }
 .navbar-container p{
     color: whitesmoke;
@@ -25,4 +29,24 @@
 }
 .burger-icon{
     cursor: pointer;
+}
+.menu-wrap.burger-menu{
+    background-color: #212529;
+}
+.menu-wrap.burger-menu div{
+    background-color: #212529   ;
+}
+.item-text{
+    color: whitesmoke;
+}
+.item-text:hover{
+    color: #FDC435;
+    transition: 0.4s;
+}
+svg{
+    fill: whitesmoke;
+}
+svg:hover{
+    fill: #FDC435;
+    transition: 0.4s;
 }
