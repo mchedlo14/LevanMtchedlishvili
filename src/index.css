@@ -11,6 +11,10 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
+h2{
+  text-align: center;
+}
+
 /* ::-webkit-scrollbar{
   width: 10px;
   background-color: #25292E;

@@ -17,7 +17,8 @@ const About = () => {
         <p className='about-text' data-aos="zoom-in">I am Levan Mchedlishvili,Front End Developer developer.I was born on January 12, 2000.I have a secondary education and now I am studying at the Faculty of It at the University.I try to learn something new in Front End every day.In this portfolio you can see some of my projects.</p>
         <h2 className='about-skills' data-aos="zoom-in">Skills</h2>
         <div data-aos="zoom-in">
-          <p className='skills'><span>Programing skills</span> HTML, CSS, SASS, JAVASCRIPT, jQuery, React, Vue(basic), Python(Data Engineer), MySQL, Mongo db</p>
+          <p className='skills'><span>Programing skills</span> HTML/CSS, SASS, Tailwindcss JS, React,React native(basic), JSX, Vue Js, Redux, Zustand, Ant Design, Reactstrap, MUI, GIT, MySQL,
+Mongo DB, Agile methodology, Adobe XD, Figma.</p>
           <p className='skills'><span>Graphical programs</span> Adobe illustrator, Adobe XD, Figma</p>
           <p className='skills'><span>Languages</span> Georgian, English B1, Russian A2</p>
         </div>
@@ -34,7 +35,7 @@ const About = () => {
 
       <div className={`non-formal-education-${theme.theme}`} data-aos="zoom-in">
         <h2 className='education-title'>Non Formal Education</h2>
-        <p className='education-pltaforms'>W3schools, FreeCodeCamp, Frontend Mentor, Udemy, Edabit, Codewars</p>
+        <p className='education-pltaforms'>W3schools, FreeCodeCamp, Frontend Mentor, Udemy, Edabit, Codewars, Leetcode</p>
       </div>
     </div>
   )
