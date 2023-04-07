@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect, useContext} from 'react'
 import Home from './components/Home'
 import NavbarComp from './components/NavbarComp'
 import About from './components/About'
@@ -14,21 +14,24 @@ import ThemeContext from './context/ThemeContext'
 import Timeline from './components/Timeline'
 
 
-
 const App = () => {
   const [loading,setLoading] = useState(false)
-  const [theme,setTheme] = useState(localStorage.getItem('themeColor') === '' ? 'dark':localStorage.getItem('themeColor'))
+  // const [theme,setTheme] = useState(localStorage.getItem('themeColor') === '' || localStorage.getItem()? 'dark':localStorage.getItem('themeColor'))
+  const [theme,setTheme] = useState('light')
   
   useEffect(() => {
     document.title = 'Levan Mtchedlishvili'
-    localStorage.getItem('themeColor')
-},[])
+},[loading])
+
+
+
 
   useEffect(()=>{
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 1000);
+
   },[])
 
   return (
