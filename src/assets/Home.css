@@ -34,6 +34,7 @@
     line-height: 125%;
     color: #88898a;
     margin-top: 32px;
+    text-align: justify;
 }
 .information-container{
     max-width: 700px;
@@ -156,8 +157,9 @@
         font-size: 45px;
     }
     .details-about-me{
-        text-align: center;
+        text-align: justify;
         font-size: 18px;
+        padding: 5px;
     }
     .job{
         text-align: center;
