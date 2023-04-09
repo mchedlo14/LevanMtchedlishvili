@@ -18,9 +18,11 @@ const App = () => {
   const [loading,setLoading] = useState(false)
   // const [theme,setTheme] = useState(localStorage.getItem('themeColor') === '' || localStorage.getItem()? 'dark':localStorage.getItem('themeColor'))
   const [theme,setTheme] = useState('light')
+  const [systemBg,SetSystemBg] = useState('')
+
   
   useEffect(() => {
-    document.title = 'Levan Mtchedlishvili'
+    document.title = 'Levan Mtchedlishvili | Portfolio'
 },[loading])
 
 
@@ -38,8 +40,10 @@ const App = () => {
     <BrowserRouter>
       <div>
         {
-          loading === true ?
-         <div className='loader'><PropagateLoader size={20} color={"#25292E"} loading={loading}/></div>
+          loading ?
+         <div className='loader'>
+            <PropagateLoader size={20} color={"#25292E"} loading={loading}/>
+          </div>
           :
           <>
             <ThemeContext.Provider value={{theme,setTheme}}>
