@@ -8,7 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { PropagateLoader } from 'react-spinners';
+import { PropagateLoader,BounceLoader} from 'react-spinners';
 import Footer from './components/Footer'
 import ThemeContext from './context/ThemeContext'
 import Timeline from './components/Timeline'
@@ -18,9 +18,7 @@ const App = () => {
   const [loading,setLoading] = useState(false)
   // const [theme,setTheme] = useState(localStorage.getItem('themeColor') === '' || localStorage.getItem()? 'dark':localStorage.getItem('themeColor'))
   const [theme,setTheme] = useState('light')
-  const [systemBg,SetSystemBg] = useState('')
 
-  
   useEffect(() => {
     document.title = 'Levan Mtchedlishvili | Portfolio'
 },[loading])
@@ -32,7 +30,7 @@ const App = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1000);
+    }, 2000);
 
   },[])
 
@@ -42,7 +40,7 @@ const App = () => {
         {
           loading ?
          <div className='loader'>
-            <PropagateLoader size={20} color={"#25292E"} loading={loading}/>
+            <BounceLoader size={100} color={"#25292E"} loading={loading}/>
           </div>
           :
           <>
