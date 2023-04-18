@@ -10,6 +10,13 @@ const ReactProjects = () => {
 
   return (
     <div className='react-projects'>
+        <div data-aos="fade-right" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Chat App</h2>
+            <p className={`project-description-${theme.theme}`}>Chat App with google authentication</p>
+            <a href='https://main--bejewelled-chimera-93f19b.netlify.app/' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
         <div data-aos="fade-left" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Netflix</h2>
             <p className={`project-description-${theme.theme}`}>Movie app, In this project I used Tailwind, Firebase.</p>
