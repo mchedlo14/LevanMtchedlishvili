@@ -10,6 +10,13 @@ const ReactProjects = () => {
 
   return (
     <div className='react-projects'>
+        <div data-aos="fade-left" className='project-container'>
+            <h2 className={`project-title-${theme.theme}`}>Blog App</h2>
+            <p className={`project-description-${theme.theme}`}>This is a website for blogs where you can sign in with Google and access different blogs. You can also read other users' blogs.</p>
+            <a href='https://github.com/mchedlo14/blogApp' target="_blank" rel="noreferrer">
+                <button className='project-button'>View Project</button>
+            </a>
+        </div>
         <div data-aos="fade-right" className='project-container'>
             <h2 className={`project-title-${theme.theme}`}>Chat App</h2>
             <p className={`project-description-${theme.theme}`}>Chat App with google authentication</p>
