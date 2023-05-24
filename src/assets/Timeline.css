@@ -65,6 +65,10 @@ body{
     background-color: #2f363e;
 	padding: 30px;
 	border-radius: 5px;
+	transition: all 1s ease;
+}
+.timeline-content:hover{
+	transform: scale(1.05);
 }
 .timeline-content h3{
     font-size: 20px;
@@ -72,12 +76,14 @@ body{
 	margin:0 0 10px;
 	text-transform: capitalize;
 	font-weight: 500;
+	user-select: none;
 }
 .timeline-content p{
     color: #c8c8c8;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 22px;
+	user-select: none;
 }
 
 /* responsive */
