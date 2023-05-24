@@ -13,7 +13,9 @@ const Footer = () => {
             <a href='https://www.linkedin.com/in/levan-mtchedlishvili-32a331222/' target='_blank' rel="noreferrer">
                 <i className={`fab fa-linkedin-in ${theme.theme}`}></i>
             </a>
-            <i className={`fab fa-instagram ${theme.theme}`}></i>
+            <a href='https://www.instagram.com/mchedlishvili___/' target='_blank'>
+              <i className={`fab fa-instagram ${theme.theme}`}></i>
+            </a>
         </div>
         <p className={`copyright-footer-${theme.theme}`}>CopyRight by Levan Mtchedlishvili</p>
         <img src='images/footerimage.png' className='image'/>

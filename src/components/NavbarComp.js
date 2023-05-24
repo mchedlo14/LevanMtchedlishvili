@@ -1,32 +1,28 @@
-import React, { useState } from 'react'
-import  {Navbar,Nav,Container} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
-import SelectTheme from './SelectTheme';
-import '../assets/NavbarComp.css'
+import React, { useState } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import SelectTheme from "./SelectTheme";
+import "../assets/NavbarComp.css";
 import { Menu, Item } from "burger-menu";
-import 'burger-menu/lib/index.css';
-
-
+import "burger-menu/lib/index.css";
+import { Squash  as Hamburger } from 'hamburger-react'
 
 const NavbarComp = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbar,setNavbar] = useState(false)
-
+  const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-
-    if(window.scrollY >= 80){
-      setNavbar(true)
-    }else{
-      setNavbar(false)
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
+  };
 
-  }
-
-  window.addEventListener('scroll',changeBackground)
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <div className='navbar-wrapper'>
+    <div className="navbar-wrapper">
       {/* {" "}
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -50,27 +46,35 @@ const NavbarComp = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar> */}
-    <div className='navbar-container'>
-      <Link to='/'  style={{ textDecoration: 'none' }}>
-        <p>Levan Mtchedlishvili</p>
-      </Link>
-      <img src='/images/menu.svg' alt='burger menu' className='burger-icon' onClick={() => setIsOpen(!isOpen)}/>
-      <Menu className="burger-menu" isOpen={isOpen} selectedKey={'entry'} onClose={() => setIsOpen(false)}>
-        <Link to='/'>
-          <Item itemKey={'manage'} text={'Home'}></Item>
+      <div className="navbar-container">
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <p>Levan Mtchedlishvili</p>
         </Link>
-        <Link to='/about'>
-          <Item itemKey={'manage'} text={'About'}></Item>
-        </Link>
-        <Link to='/timeline'>
-          <Item itemKey={'user'} text={'Timeline'}></Item>
-        </Link>
-        <SelectTheme />
-      </Menu>
-    </div>
-    
+      
+        <div>
+        <Hamburger toggled={isOpen} toggle={setIsOpen} color="#ffff" size={25} rounded />
+
+        </div>
+        <Menu
+          className="burger-menu"
+          isOpen={isOpen}
+          selectedKey={"entry"}
+          onClose={() => setIsOpen(false)}
+        >
+          <Link to="/">
+            <Item itemKey={"manage"} text={"Home"}></Item>
+          </Link>
+          <Link to="/about">
+            <Item itemKey={"manage"} text={"About"}></Item>
+          </Link>
+          <Link to="/timeline">
+            <Item itemKey={"user"} text={"Timeline"}></Item>
+          </Link>
+          <SelectTheme />
+        </Menu>
+      </div>
     </div>
   );
-}
+};
 
-export default NavbarComp
+export default NavbarComp;

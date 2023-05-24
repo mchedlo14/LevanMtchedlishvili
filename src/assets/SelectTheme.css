@@ -4,7 +4,6 @@
     border-radius: 50%;
     background-color: #212529;
     display: flex;
-    justify-content: center;
     align-items: center;
     border:0;
 }
@@ -15,6 +14,7 @@
 }
 .fa-moon:hover{
     color:  rgba(78, 77, 77, 0.55);
+    transition: all 0.5s;
 }
 .fa-sun{
     color: rgba(255,255,255,.55);
@@ -22,6 +22,7 @@
 }
 .fa-sun:hover{
     color: #FDC435;
+    transition: all 0.5s;
 }
 .select-theme-buttons-container{
     display: flex;
